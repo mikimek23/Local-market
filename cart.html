@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - LocalMarket</title>
+</head>
+<body>
+
+    <header>
+        <h1>Your Shopping Cart</h1>
+        <nav>
+            <a href="index.html">Continue Shopping</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart-items">
+            <h2>Items in your cart</h2>
+            <!-- Table is the best semantic choice for cart data -->
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vintage Film Camera</td>
+                        <td>$45.00</td>
+                        <td>1</td>
+                        <td>$45.00</td>
+                        <td><button type="button">Remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>Leather Camera Strap</td>
+                        <td>$15.00</td>
+                        <td>2</td>
+                        <td>$30.00</td>
+                        <td><button type="button">Remove</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Subtotal</strong></td>
+                        <td colspan="2"><strong>$75.00</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section class="cart-summary">
+            <h2>Order Summary</h2>
+            <p>Subtotal: $75.00</p>
+            <p>Shipping: $5.00</p>
+            <p><strong>Total: $80.00</strong></p>
+            <!-- This link will eventually connect to your Task 11! -->
+            <a href="checkout.html"><button type="button">Proceed to Checkout</button></a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LocalMarket. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
