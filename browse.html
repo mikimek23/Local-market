@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Listings | LocalMarket</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="" alt="Logo">
+            <span>LocalMarket</span>
+        </div>
+    </header>
+
+    <main>
+        <h1>Browse Listings</h1>
+        <p>Explore products and services from local sellers.</p>
+
+        <!-- Search, filter and sort controls -->
+        <section id="filters">
+            <h2>Search &amp; Filter</h2>
+            <form action="browse.html" method="get">
+
+                <label for="search">Search</label>
+                <input type="search" id="search" name="search" placeholder="Search by title or description">
+
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="">All categories</option>
+                    <option value="food">Food &amp; Groceries</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="home">Home &amp; Garden</option>
+                    <option value="handmade">Handmade Crafts</option>
+                    <option value="cleaning">Cleaning</option>
+                    <option value="repairs">Repairs</option>
+                    <option value="tutoring">Tutoring</option>
+                    <option value="beauty">Beauty &amp; Wellness</option>
+                    <option value="delivery">Delivery</option>
+                </select>
+
+                <label for="type">Type</label>
+                <select id="type" name="type">
+                    <option value="">Products and services</option>
+                    <option value="product">Products</option>
+                    <option value="service">Services</option>
+                </select>
+
+                <label for="min-price">Min price</label>
+                <input type="number" id="min-price" name="min-price" min="0">
+
+                <label for="max-price">Max price</label>
+                <input type="number" id="max-price" name="max-price" min="0">
+
+                <label for="sort">Sort by</label>
+                <select id="sort" name="sort">
+                    <option value="newest">Newest</option>
+                    <option value="price-low">Price: low to high</option>
+                    <option value="price-high">Price: high to low</option>
+                    <option value="name">Name (A-Z)</option>
+                </select>
+
+                <button type="submit">Apply</button>
+                <button type="reset">Clear filters</button>
+            </form>
+        </section>
+
+        <!-- Listings grid -->
+        <section id="listings">
+            <h2>All Listings</h2>
+
+            <article id="listing-1">
+                <img src="" alt="Fresh honey jar">
+                <h3>Fresh Local Honey</h3>
+                <p><strong>Type:</strong> Product | <strong>Category:</strong> Food &amp; Groceries</p>
+                <p><strong>Price:</strong> 250 ETB</p>
+                <p><strong>Seller:</strong> Abebe's Farm</p>
+                <p><strong>Location:</strong> Addis Ababa</p>
+                <p>Pure natural honey, 1 kg jar.</p>
+                <p><strong>Status:</strong> Available</p>
+                <a href="listing-card.html">View Details</a>
+            </article>
+
+            <article id="listing-2">
+                <img src="" alt="Home cleaning service">
+                <h3>Home Cleaning</h3>
+                <p><strong>Type:</strong> Service | <strong>Category:</strong> Cleaning</p>
+                <p><strong>Fee:</strong> 500 ETB per visit</p>
+                <p><strong>Seller:</strong> CleanPro</p>
+                <p><strong>Location:</strong> Bole</p>
+                <p>Full house cleaning by trained staff.</p>
+                <p><strong>Status:</strong> Available</p>
+                <a href="listing-card.html">View Details</a>
+            </article>
+
+            <article id="listing-3">
+                <img src="" alt="Handmade scarf">
+                <h3>Handmade Scarf</h3>
+                <p><strong>Type:</strong> Product | <strong>Category:</strong> Handmade Crafts</p>
+                <p><strong>Price:</strong> 300 ETB</p>
+                <p><strong>Seller:</strong> Selam Crafts</p>
+                <p><strong>Location:</strong> Piassa</p>
+                <p>Traditional cotton scarf, hand woven.</p>
+                <p><strong>Status:</strong> Out of stock</p>
+                <a href="listing-card.html">View Details</a>
+            </article>
+        </section>
+
+        <!-- Shown when no listing matches -->
+        <section id="no-results">
+            <p>No listings found. Try changing or clearing your filters.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>
