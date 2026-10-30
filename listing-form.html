@@ -1,0 +1,157 @@
+<label for="price">Regular Price (ETB): *</label><br>
+            <input type="number" id="price" name="price"
+                min="0" step="0.01" placeholder="0.00" required>
+            <br><br>
+
+            <label for="discount">Discount Price (ETB):</label><br>
+            <input type="number" id="discount" name="discount"
+                min="0" step="0.01" placeholder="Optional">
+            <br><br>
+
+            <label for="quantity">Available Stock Quantity: *</label><br>
+            <input type="number" id="quantity" name="quantity"
+                min="0" placeholder="Enter available quantity" required>
+            <br><br>
+
+            <label for="availability">Stock Status:</label><br>
+            <select id="availability" name="availability">
+                <option value="in-stock">In Stock</option>
+                <option value="low-stock">Low Stock</option>
+                <option value="out-of-stock">Out of Stock</option>
+            </select>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- SECTION 1: PRODUCT IMAGES -->
+
+        <fieldset>
+            <legend>1. Product Images</legend>
+
+            <p>Upload clear images that show the actual product.</p>
+
+            <label for="main-image">Main Product Image: *</label><br>
+            <input type="file" id="main-image" name="main_image"
+                accept="image/png, image/jpeg, image/webp" required>
+            <br><br>
+
+            <label for="gallery">Additional Product Images:</label><br>
+            <input type="file" id="gallery" name="gallery[]"
+                accept="image/png, image/jpeg, image/webp" multiple>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- SECTION 2: SELLER INFORMATION -->
+
+        <fieldset>
+            <legend>2. Seller Information</legend>
+
+            <label for="seller-name">Seller / Business Name: *</label><br>
+            <input type="text" id="seller-name" name="seller_name"
+                placeholder="Enter your business name" required>
+            <br><br>
+
+            <label for="seller-email">Email Address: *</label><br>
+            <input type="email" id="seller-email" name="seller_email"
+                placeholder="example@email.com" required>
+            <br><br>
+
+            <label for="phone">Contact Number: *</label><br>
+            <input type="tel" id="phone" name="phone"
+                placeholder="+251 9XX XXX XXX" required>
+            <br><br>
+
+            <label for="location">Business Location: *</label><br>
+            <input type="text" id="location" name="location"
+                placeholder="City, Sub-city or Area" required>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- SECTION 3: DELIVERY AND RETURNS -->
+
+        <fieldset>
+            <legend>3. Delivery and Return Information</legend>
+
+            <label for="delivery">Delivery Option:</label><br>
+            <select id="delivery" name="delivery">
+                <option value="">Select delivery option</option>
+                <option value="seller">Seller Delivery</option>
+                <option value="pickup">Customer Pickup</option>
+                <option value="both">Both Options Available</option>
+            </select>
+            <br><br>
+
+            <label for="delivery-fee">Delivery Fee (ETB):</label><br>
+            <input type="number" id="delivery-fee" name="delivery_fee"
+                min="0" step="0.01" placeholder="Enter delivery fee">
+            <br><br>
+
+            <label for="returns">Return Policy:</label><br>
+            <select id="returns" name="return_policy">
+                <option value="">Select return policy</option>
+                <option value="accepted">Returns Accepted</option>
+                <option value="not-accepted">Returns Not Accepted</option>
+                <option value="conditions">Returns Under Certain Conditions</option>
+            </select>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- SECTION 4: LISTING STATUS -->
+         <fieldset>
+            <legend>4. Listing Status</legend>
+
+            <label for="status">Choose Listing Status:</label><br>
+            <select id="status" name="status">
+                <option value="draft">Save as Draft</option>
+                <option value="active">Publish Listing</option>
+                <option value="inactive">Keep Inactive</option>
+            </select>
+            <br><br>
+
+            <label>
+                <input type="checkbox" name="confirmation" required>
+                I confirm that the product details and prices are accurate.
+            </label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- FORM BUTTONS -->
+
+        <button type="submit" name="submit_action" value="publish">
+            Submit Listing
+        </button>
+
+        <button type="submit" name="submit_action" value="draft">
+            Save as Draft
+        </button>
+
+        <button type="reset">
+            Clear Form
+        </button>
+
+    </form>
+
+</main>
+
+<hr>
+
+<footer>
+    <p>&copy; 2026 LocalMarket. All Rights Reserved.</p>
+    <p>Connecting Local Sellers with Local Customers.</p>
+</footer>
+
+</body>
+</html>
