@@ -1,0 +1,134 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile | LocalMarket</title>
+</head><body><header>
+    <h1>LocalMarket</h1>
+    <p>Connecting Local Sellers with Local Customers</p>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="index.html">Products</a> |
+        <a href="cart.html">My Cart</a> |
+        <a href="customer-profile.html">My Profile</a>
+    </nav>
+    <hr>
+</header>
+
+<main>
+
+    <h2>My Customer Profile</h2>
+    <p>Manage your account and shopping information.</p>
+
+    <section>
+        <h3>Profile Information</h3>
+
+        <img src="images/profile.jpg" alt="Customer Profile Picture" width="120">
+
+        <p><strong>Full Name:</strong> Customer Name</p>
+        <p><strong>Email:</strong> customer@example.com</p>
+        <p><strong>Phone:</strong> +251 9XX XXX XXX</p>
+        <p><strong>Member Since:</strong> 2026</p>
+
+        <a href="#edit-profile">Edit Profile</a>
+    </section>
+
+    <hr>
+
+    <section id="edit-profile">
+        <h3>Edit Personal Information</h3>
+
+        <form>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="photo">Profile Picture:</label><br>
+            <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Delivery Address</h3>
+
+        <p><strong>Location:</strong> Addis Ababa, Ethiopia</p>
+
+        <form>
+            <label for="address">Delivery Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="35"></textarea><br><br>
+
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city"><br><br>
+
+            <button type="submit">Save Address</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>My Orders</h3>
+
+        <table border="1" cellpadding="8">
+            <tr>
+                <th>Order ID</th>
+                <th>Date</th>
+                <th>Total</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>LM001</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>LM002</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>My Favorites</h3>
+        <p>Your saved favorite products will appear here.</p>
+        <a href="index.html">Explore Products</a>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Account Settings</h3>
+
+        <p><a href="#edit-profile">Update Personal Information</a></p>
+        <p><a href="#edit-profile">Change Account Details</a></p>
+        <p><a href="index.html">Logout</a></p>
+    </section>
+
+</main>
+
+<hr>
+
+<footer>
+    <p>&copy; 2026 LocalMarket. All Rights Reserved.</p>
+    <p>Connecting Local Sellers with Local Customers.</p>
+</footer>
+
+</body>
+</html>
