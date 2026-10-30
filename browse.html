@@ -18,53 +18,96 @@
         <p>Explore products and services from local sellers.</p>
 
         <!-- Search, filter and sort controls -->
+        ```html
+        <!-- Search and Filter Controls -->
         <section id="filters">
-            <h2>Search &amp; Filter</h2>
+            <h2>Search &amp; Filter Listings</h2>
+
             <form action="browse.html" method="get">
+                <!-- Search by listing title or description -->
+                <fieldset>
+                    <legend>Search Listings</legend>
 
-                <label for="search">Search</label>
-                <input type="search" id="search" name="search" placeholder="Search by title or description">
+                    <label for="search">Search by keyword:</label>
+                    <input
+                        type="search"
+                        id="search"
+                        name="search"
+                        placeholder="Enter a product or service name"
+                    >
+                </fieldset>
 
-                <label for="category">Category</label>
-                <select id="category" name="category">
-                    <option value="">All categories</option>
-                    <option value="food">Food &amp; Groceries</option>
-                    <option value="clothing">Clothing</option>
-                    <option value="electronics">Electronics</option>
-                    <option value="home">Home &amp; Garden</option>
-                    <option value="handmade">Handmade Crafts</option>
-                    <option value="cleaning">Cleaning</option>
-                    <option value="repairs">Repairs</option>
-                    <option value="tutoring">Tutoring</option>
-                    <option value="beauty">Beauty &amp; Wellness</option>
-                    <option value="delivery">Delivery</option>
-                </select>
+                <!-- Filter by category and listing type -->
+                <fieldset>
+                    <legend>Filter Options</legend>
 
-                <label for="type">Type</label>
-                <select id="type" name="type">
-                    <option value="">Products and services</option>
-                    <option value="product">Products</option>
-                    <option value="service">Services</option>
-                </select>
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="">All Categories</option>
+                        <option value="food">Food &amp; Groceries</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="home">Home &amp; Garden</option>
+                        <option value="handmade">Handmade Crafts</option>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="repairs">Repairs</option>
+                        <option value="tutoring">Tutoring</option>
+                        <option value="beauty">Beauty &amp; Wellness</option>
+                        <option value="delivery">Delivery</option>
+                    </select>
 
-                <label for="min-price">Min price</label>
-                <input type="number" id="min-price" name="min-price" min="0">
+                    <label for="type">Listing Type:</label>
+                    <select id="type" name="type">
+                        <option value="">All Types</option>
+                        <option value="product">Products</option>
+                        <option value="service">Services</option>
+                    </select>
+                </fieldset>
 
-                <label for="max-price">Max price</label>
-                <input type="number" id="max-price" name="max-price" min="0">
+                <!-- Filter by price range -->
+                <fieldset>
+                    <legend>Price Range (ETB)</legend>
 
-                <label for="sort">Sort by</label>
-                <select id="sort" name="sort">
-                    <option value="newest">Newest</option>
-                    <option value="price-low">Price: low to high</option>
-                    <option value="price-high">Price: high to low</option>
-                    <option value="name">Name (A-Z)</option>
-                </select>
+                    <label for="min-price">Minimum Price:</label>
+                    <input
+                        type="number"
+                        id="min-price"
+                        name="min-price"
+                        min="0"
+                        step="0.01"
+                        placeholder="Minimum price"
+                    >
 
-                <button type="submit">Apply</button>
-                <button type="reset">Clear filters</button>
+                    <label for="max-price">Maximum Price:</label>
+                    <input
+                        type="number"
+                        id="max-price"
+                        name="max-price"
+                        min="0"
+                        step="0.01"
+                        placeholder="Maximum price"
+                    >
+                </fieldset>
+
+                <!-- Sort listing results -->
+                <fieldset>
+                    <legend>Sort Listings</legend>
+
+                    <label for="sort">Sort by:</label>
+                    <select id="sort" name="sort">
+                        <option value="newest">Newest First</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name (A-Z)</option>
+                    </select>
+                </fieldset>
+
+                <!-- Form action buttons -->
+                <button type="submit">Apply Filters</button>
+                <button type="reset">Clear Filters</button>
             </form>
         </section>
+```
 
         <!-- Listings grid -->
         <section id="listings">
