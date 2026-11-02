@@ -1,134 +1,296 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Profile | LocalMarket</title>
-</head><body><header>
-    <h1>LocalMarket</h1>
-    <p>Connecting Local Sellers with Local Customers</p>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="index.html">Products</a> |
-        <a href="cart.html">My Cart</a> |
-        <a href="customer-profile.html">My Profile</a>
-    </nav>
-    <hr>
-</header>
+    <meta name="description"
+        content="Manage your LocalMarket customer account, orders, favorites and delivery information.">
 
-<main>
+    <title>My Profile | LocalMarket</title>
+</head>
 
-    <h2>My Customer Profile</h2>
-    <p>Manage your account and shopping information.</p>
+<body>
 
-    <section>
-        <h3>Profile Information</h3>
+    <header>
+        <h1>LocalMarket</h1>
+        <p>Connecting Local Sellers with Local Customers</p>
 
-        <img src="images/profile.jpg" alt="Customer Profile Picture" width="120">
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a> |
+            <a href="index.html">Products</a> |
+            <a href="cart.html">My Cart</a> |
+            <a href="customer-profile.html" aria-current="page">My Profile</a>
+        </nav>
 
-        <p><strong>Full Name:</strong> Customer Name</p>
-        <p><strong>Email:</strong> customer@example.com</p>
-        <p><strong>Phone:</strong> +251 9XX XXX XXX</p>
-        <p><strong>Member Since:</strong> 2026</p>
+        <hr>
+    </header>
 
-        <a href="#edit-profile">Edit Profile</a>
-    </section>
+    <main>
+        <section>
+            <h2>My Account</h2>
 
-    <hr>
+            <p>Welcome back! Manage your account and keep track of your shopping activities.</p>
+        </section>
 
-    <section id="edit-profile">
-        <h3>Edit Personal Information</h3>
+        <section aria-labelledby="profile-heading">
 
-        <form>
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
+            <h3 id="profile-heading">Personal Information</h3>
 
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email"><br><br>
+            <img src="images/profile.jpg"
+                alt="Customer profile picture"
+                width="120"
+                height="120">
 
-            <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="phone"><br><br>
+            <p><strong>Full Name:</strong> Customer Name</p>
 
-            <label for="photo">Profile Picture:</label><br>
-            <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+            <p><strong>Email:</strong> customer@example.com</p>
 
-            <button type="submit">Save Changes</button>
-        </form>
-    </section>
+            <p><strong>Phone:</strong> +251 9XX XXX XXX</p>
 
-    <hr>
+            <p><strong>Account Type:</strong> Customer</p>
 
-    <section>
-        <h3>Delivery Address</h3>
+            <p><strong>Member Since:</strong> 2026</p>
 
-        <p><strong>Location:</strong> Addis Ababa, Ethiopia</p>
+            <a href="#edit-profile">Edit Profile Information</a>
 
-        <form>
-            <label for="address">Delivery Address:</label><br>
-            <textarea id="address" name="address" rows="4" cols="35"></textarea><br><br>
+        </section>
 
-            <label for="city">City:</label><br>
-            <input type="text" id="city" name="city"><br><br>
+        <hr>
 
-            <button type="submit">Save Address</button>
-        </form>
-    </section>
+        <section id="edit-profile">
 
-    <hr>
+            <h3>Edit Personal Information</h3>
 
-    <section>
-        <h3>My Orders</h3>
+            <form>
 
-        <table border="1" cellpadding="8">
-            <tr>
-                <th>Order ID</th>
-                <th>Date</th>
-                <th>Total</th>
-                <th>Status</th>
-            </tr>
+                <fieldset>
 
-            <tr>
-                <td>LM001</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+                    <legend>Update Your Details</legend>
 
-            <tr>
-                <td>LM002</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-    </section>
+                    <p>
+                        <label for="name">Full Name:</label><br>
+                        <input type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required>
+                    </p>
 
-    <hr>
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required>
+                    </p>
 
-    <section>
-        <h3>My Favorites</h3>
-        <p>Your saved favorite products will appear here.</p>
-        <a href="index.html">Explore Products</a>
-    </section>
+                    <p>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+251 9XX XXX XXX"
+                            autocomplete="tel"
+                            required>
+                    </p>
 
-    <hr>
+                    <p>
+                        <label for="photo">Profile Picture:</label><br>
+                        <input type="file"
+                            id="photo"
+                            name="photo"
+                            accept="image/*">
+                    </p>
 
-    <section>
-        <h3>Account Settings</h3>
+                    <button type="submit">Save Changes</button>
 
-        <p><a href="#edit-profile">Update Personal Information</a></p>
-        <p><a href="#edit-profile">Change Account Details</a></p>
-        <p><a href="index.html">Logout</a></p>
-    </section>
+                    <button type="reset">Clear Form</button>
 
-</main>
+                </fieldset>
 
-<hr>
+            </form>
 
-<footer>
-    <p>&copy; 2026 LocalMarket. All Rights Reserved.</p>
-    <p>Connecting Local Sellers with Local Customers.</p>
-</footer>
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h3>Delivery Address</h3>
+
+            <p>Manage the address where you want your orders delivered.</p>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Address Information</legend>
+                    <p>
+                        <label for="address">Street Address:</label><br>
+                        <textarea id="address"
+                            name="address"
+                            rows="3"
+                            cols="35"
+                            placeholder="Enter your street address"
+                            required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="city">City:</label><br>
+                        <input type="text"
+                            id="city"
+                            name="city"
+                            value="Addis Ababa"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="region">Region:</label><br>
+                        <input type="text"
+                            id="region"
+                            name="region"
+                            placeholder="Enter your region">
+                    </p>
+
+                    <p>
+                        <label for="delivery-phone">Delivery Contact:</label><br>
+                        <input type="tel"
+                            id="delivery-phone"
+                            name="delivery-phone"
+                            placeholder="Enter contact number">
+                    </p>
+
+                    <button type="submit">Save Address</button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h3>My Orders</h3>
+
+            <p>View your recent purchases and order status.</p>
+
+            <table border="1" cellpadding="8">
+
+                <caption>Recent Order History</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Order ID</th>
+                        <th scope="col">Order Date</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <p>
+                <a href="orders.html">View All Orders</a>
+            </p>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h3>My Favorite Products</h3>
+
+            <p>
+                Keep track of products you love and want to purchase later.
+            </p>
+
+            <article>
+
+                <h4>Saved Products</h4>
+
+                <p>Your favorite products will appear here.</p>
+
+                <a href="index.html">Explore Products</a>
+
+            </article>
+
+        </section>
+
+        <hr>
+
+        <section>
+
+            <h3>Account Settings</h3>
+
+            <ul>
+
+                <li>
+                    <a href="#edit-profile">Update Personal Information</a>
+                </li>
+
+                <li>
+                    <a href="#edit-profile">Change Contact Details</a>
+                </li>
+
+                <li>
+                    <a href="#delivery-address">Manage Delivery Address</a>
+                </li>
+
+                <li>
+                    <a href="index.html">Logout</a>
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <hr>
+
+        <p>&copy; 2026 LocalMarket. All Rights Reserved.</p>
+        <p>Connecting Local Sellers with Local Customers.</p>
+
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a> |
+            <a href="index.html">Products</a> |
+            <a href="cart.html">Cart</a>
+        </nav>
+
+    </footer>
 
 </body>
+
 </html>
