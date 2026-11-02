@@ -1,125 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LocalMarket connects customers with local sellers offering products and services.">
+    <meta name="description"
+        content="LocalMarket connects customers with local sellers offering products and services.">
+    <link rel="stylesheet" href="css/index.css">
     <title>LocalMarket - Your Local Marketplace</title>
 </head>
 
 <body>
-
-
-    <header>
-        <h1>LocalMarket</h1>
-        <p>Your local marketplace, all in one place.</p>
+    <header class="site-header">
+        <a class="brand" href="index.html">LocalMarket</a>
+        <nav aria-label="Main navigation">
+            <img src="assets/images/logo.png" alt="logo" width="50" height="50">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="pages/browse.html">Browse Listings</a>
+            <a href="pages/favorites.html">Favorites</a>
+            <a href="pages/search.html">Search</a>
+            <a href="pages/auth/login.html">Login</a>
+            <a href="pages/auth/registration.html">Register</a>
+        </nav>
     </header>
 
-    <nav aria-label="Main navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Browse Listings</a></li>
-            <li><a href="favorites.html">Favorites</a></li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="/html/login.html">Login</a></li>
-            <li><a href="/html/registration.html">Register</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section>
-            <h2>Welcome to LocalMarket</h2>
-
-            <p>
-                LocalMarket is an online marketplace designed to connect
-                customers with local sellers offering different products
-                and services.
-            </p>
-
-            <p>
-                Our platform makes it easier for customers to discover
-                local businesses, explore available products and services,
-                and connect with sellers in their communities.
-            </p>
-
-            <p>
-                Whether you are looking for everyday products or professional
-                services, LocalMarket helps you find what you need locally.
-            </p>
-
-            <a href="/html/listing-card.html">Explore Listings</a>
+        <section class="hero">
+            <aside><img src="assets/images/market.png" alt="logo"></aside>
+            <h1>Welcome to LocalMarket</h1>
+            <p>Discover products and services from sellers in your community.</p>
+            <a class="button" href="pages/browse.html">Explore Listings</a>
         </section>
 
-      
-        <section>
-            <h2>What Can You Find on LocalMarket?</h2>
-
-            <ul>
-                <li>Locally produced food and agricultural products</li>
-                <li>Clothing and fashion products</li>
-                <li>Electronics and accessories</li>
-                <li>Home and household products</li>
-                <li>Professional and personal services</li>
-                <li>Repair and maintenance services</li>
+        <section id="categories">
+            <h2>Browse by Category</h2>
+            <ul class="category-list">
+                <li><a href="pages/browse.html?category=food">Food &amp; Groceries</a></li>
+                <li><a href="pages/browse.html?category=clothing">Clothing</a></li>
+                <li><a href="pages/browse.html?category=electronics">Electronics</a></li>
+                <li><a href="pages/browse.html?category=home">Home &amp; Garden</a></li>
+                <li><a href="pages/browse.html?category=handmade">Handmade Crafts</a></li>
+                <li><a href="pages/browse.html?category=cleaning">Cleaning</a></li>
+                <li><a href="pages/browse.html?category=repairs">Repairs</a></li>
+                <li><a href="pages/browse.html?category=tutoring">Tutoring</a></li>
+                <li><a href="pages/browse.html?category=beauty">Beauty &amp; Wellness</a></li>
+                <li><a href="pages/browse.html?category=delivery">Delivery</a></li>
             </ul>
         </section>
 
-        <section>
-            <h2>For Customers</h2>
-
-            <p>
-                Discover products and services, compare available options,
-                save your favorite listings, and prepare orders.
-            </p>
+        <section id="about">
+            <h2>Why LocalMarket?</h2>
+            <p>LocalMarket makes it easy to find, compare, and buy from people in your own community while helping small
+                businesses reach more customers.</p>
+            <a href="pages/listing-form.html">List your products &amp; services</a>
         </section>
 
-       
-        <section>
-            <h2>For Sellers</h2>
-
-            <p>
-                Showcase your products and services, manage your listings,
-                and make your offerings visible to potential customers.
-            </p>
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li><strong>Browse:</strong> Search or explore products and services.</li>
+                <li><strong>Choose:</strong> Review the listing, seller, price, and location.</li>
+                <li><strong>Connect:</strong> Contact the seller to arrange your purchase or service.</li>
+            </ol>
         </section>
-
     </main>
+
     <footer>
+        <p>&copy; 2026 LocalMarket. All rights reserved.</p>
 
-        <section>
-            <h2>About LocalMarket</h2>
+        <nav aria-label="Footer navigation">
+            <a href="../index.html">Home</a> |
+            <a href="../index.html#about">About Us</a> |
+            <a href="../index.html#contact">Contact Us</a>
+        </nav>
 
-            <p>
-                LocalMarket is a marketplace prototype that supports
-                connections between local customers and sellers.
-            </p>
-        </section>
-
-        <section>
-            <h2>Quick Links</h2>
-
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Browse Listings</a></li>
-                <li><a href="favorites.html">Favorites</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Contact</h2>
-
-            <p>Email: info@localmarket.example</p>
-            <p>Location: Ethiopia</p>
-        </section>
-
-        <p>
-            &copy; 2026 LocalMarket. All rights reserved.
-        </p>
-
+        <p>Connecting our community through local buying and selling.</p>
     </footer>
-
 </body>
+
 </html>
