@@ -35,3 +35,50 @@
     background-color: #4338ca;
     color: #ffffff;
 }
+
+/* Task #5: Homepage introduction */
+.hero {
+    text-align: center;
+    padding: 48px 24px;
+    background-color: #eef2ff;
+}
+
+.hero aside img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 320px;
+    margin: 0 auto 24px;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    font-size: 2.75rem;
+    line-height: 1.2;
+    margin: 0 0 16px;
+    color: #312e81;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 24px;
+    color: #374151;
+}
+
+.hero .button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #4338ca;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.hero .button:hover,
+.hero .button:focus {
+    background-color: #312e81;
+}
