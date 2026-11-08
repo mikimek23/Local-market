@@ -1,0 +1,95 @@
+/*LOCALMARKET CATEGORY SHORTCUTS */
+
+#categories {
+    background-color: #f1f5fb;
+    padding: 65px 8%;
+    text-align: center;
+}
+#categories h2 {
+    color: #17365d;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 22px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0;
+    list-style: none;
+}
+.category-list li {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(23, 54, 93, 0.07);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.category-list li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 115px;
+    padding: 20px 12px;
+    color: #17365d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.category-list li:hover {
+    transform: translateY(-7px);
+    border-color: #2563eb;
+    box-shadow: 0 12px 25px rgba(23, 54, 93, 0.15);
+}
+
+.category-list li a:hover {
+    color: #2563eb;
+    background-color: #eff6ff;
+}
+.category-list li a:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: -4px;
+}
+.category-list li a:active {
+    background-color: #dbeafe;
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media (max-width: 900px) {
+    .category-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+}
+@media (max-width: 600px) {
+    #categories {
+        padding: 40px 18px;
+    }
+
+    #categories h2 {
+        font-size: 26px;
+    }
+
+    .category-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin-top: 25px;
+    }
+
+    .category-list li a {
+        min-height: 95px;
+        padding: 15px 8px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 350px) {
+    .category-list {
+        grid-template-columns: 1fr;
+    }
+}
