@@ -81,3 +81,12 @@ Local-market/
 - Create a product listing.
 - Register and log in to an account.
 - Responsive basic layout for different screen sizes.
+
+## HTML and CSS Development Guidelines
+
+- Use HTML to organize the structure and content of website pages.
+- Use CSS to control colors, spacing, typography, and page layouts.
+- Keep shared styles in the `css/index.css` stylesheet.
+- Store website images in the `assets/images/` directory.
+- Test page appearance in a web browser after making changes.
+- Preserve existing work when updating shared project files.
