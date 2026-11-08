@@ -32,17 +32,26 @@ from local sellers. Customers can browse listings, search for items, view
 listing details, save favorites, and create an account.
 
 ## Project Structure
-
 ```text
 Local-market/
-├── index.html                 # Home page
-├── pages/                     # Website pages
-│   ├── auth/                  # Login and registration pages
-│   └── *.html                 # Listings, search, profile, and form pages
-├── assets/                    # Images and other media
-├── css/                       # Stylesheets
-├── js/                        # JavaScript files
-└── README.md
+|
+|-- index.html
+|-- pages/
+|   |-- browse.html
+|   |-- customer-profile.html
+|   |-- favorites.html
+|   |-- listing-card.html
+|   |-- listing-details.html
+|   |-- listing-form.html
+|   |-- search.html
+|   |-- auth/
+|       |-- login.html
+|       |-- registration.html
+|-- assets/
+|   |-- images/
+|-- css/
+|   |-- index.css
+|-- README.md
 ```
 
 ## How to Run the Project
