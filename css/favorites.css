@@ -1,0 +1,187 @@
+
+/* =========================================
+   LocalMarket - Favorites Page
+   Week 4 - Task 8
+========================================= */
+
+/* 1. Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* 2. Header */
+header {
+    background-color: #ffffff;
+    padding: 15px 6%;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+header span {
+    color: #176b52;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 3. Main Content */
+main {
+    width: min(1100px, 90%);
+    margin: 40px auto;
+}
+
+#favorites h1 {
+    color: #312e81;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+#favorites > p {
+    color: #667085;
+    margin-bottom: 25px;
+}
+
+/* 4. Favorites Listing Grid */
+#favorites-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+/* 5. Individual Favorite Cards */
+#favorites-container article {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#favorites-container article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+#favorites-container article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+#favorites-container article h3 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    color: #312e81;
+}
+
+#favorites-container article p {
+    margin-bottom: 6px;
+    color: #374151;
+    line-height: 1.4;
+}
+
+/* 6. Listing Details Link */
+#favorites-container article a {
+    display: block;
+    margin-top: auto;
+    padding: 10px 16px;
+    text-align: center;
+    background-color: #4338ca;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+#favorites-container article a:hover,
+#favorites-container article a:focus {
+    background-color: #312e81;
+}
+
+/* 7. Remove Favorite Control */
+#favorites-container .remove-favorite {
+    margin-top: 10px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fee2e2;
+    color: #b91c1c;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#favorites-container .remove-favorite:hover {
+    background-color: #fecaca;
+}
+
+/* 8. Empty Favorites State */
+#favorites-empty {
+    margin-top: 25px;
+    padding: 45px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px dashed #c7d2fe;
+    border-radius: 12px;
+    color: #667085;
+    font-size: 16px;
+}
+
+/* 9. Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    #favorites h1 {
+        font-size: 25px;
+    }
+
+    #favorites-container {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    #favorites-container {
+        grid-template-columns: 1fr;
+    }
+
+    #favorites-container article {
+        padding: 14px;
+    }
+
+    #favorites-empty {
+        padding: 30px 15px;
+    }
+}
